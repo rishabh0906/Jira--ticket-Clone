@@ -34,7 +34,15 @@ for (let i = 0; i < colors.length; i++) {
     colors[i].addEventListener("click", (e) => {
 
         let clr = colors[i].classList[0];
-
+              for(let i=0;i<colors.length;i++)
+              {
+                  if(grid.classList.contains(colors[i].classList[0]))
+                  {
+                      grid.classList.remove(colors[i].classList[0]);
+                      break;
+                  }
+              }
+              grid.classList.add(clr);
 
         if (select) {
             select = false;
