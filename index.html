@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jira Ticket Clone</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<link rel="stylesheet" href="style.css">
-
-<body>
+  <body>
     <div class="container">
+      <div class="navbar">
+        <div class="filter-container">
+          <div class="filter">
+            <div class="pink-btn2"></div>
+          </div>
+          <div class="filter">
+            <div class="blue-btn2"></div>
+          </div>
 
-        <div class="navbar">
-
-            <div class="filter-container">
-
-                <div class="filter">
-                    <div class="pink-btn2"></div>
-                </div>
-                <div class="filter">
-                    <div class="blue-btn2"></div>
-                </div>
-
-                <div class="filter">
-                    <div class="green-btn2"></div>
-                </div>
-                <div class="filter">
-                    <div class="black-btn2"></div>
-                </div>
-            </div>
-            <div class="editor-container">
-                <div class="add-btn  material-icons">add</div>
-                <div class="delete-btn  material-icons">close</div>
-            </div>
-            <div class="toggle-btn">
-                <div class="create-btn material-icons">gesture</div>
-            </div>
+          <div class="filter">
+            <div class="green-btn2"></div>
+          </div>
+          <div class="filter">
+            <div class="black-btn2"></div>
+          </div>
         </div>
+        <div class="editor-container">
+          <div class="add-btn material-icons">add</div>
+          <div class="delete-btn material-icons">close</div>
+        </div>
+        <div class="toggle-btn">
+          <div class="create-btn material-icons">gesture</div>
+        </div>
+      </div>
 
-
-        <div class="grid">
-            <!-- <div class="ticket">
+      <div class="grid">
+        <!-- <div class="ticket">
        <div class="color"></div>
        <div class="ticket-id"></div>
        <div class="ticket-text" spellcheck="false" contenteditable></div>
      </div> -->
-
-        </div>
+      </div>
     </div>
     <!-- <div class="dialog-box">
 <div class="text-area" spellcheck="false" contenteditable>
@@ -66,14 +63,11 @@
 </div> -->
     <!-- </div> -->
     <div class="sheet">
-        <div class="close">
-            <div class="close-btn material-icons"> close </div>
-        </div>
-        <canvas id="canvas"></canvas>
+      <div class="close">
+        <div class="close-btn material-icons">close</div>
+      </div>
+      <canvas id="canvas"></canvas>
     </div>
     <script src="script.js"></script>
-
-
-</body>
-
+  </body>
 </html>
